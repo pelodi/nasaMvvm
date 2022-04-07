@@ -13,6 +13,8 @@
 		F54DE14E27FDB6EF000193C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54DE14C27FDB6EF000193C0 /* Main.storyboard */; };
 		F54DE15027FDB6F1000193C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54DE14F27FDB6F1000193C0 /* Assets.xcassets */; };
 		F54DE15327FDB6F1000193C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54DE15127FDB6F1000193C0 /* LaunchScreen.storyboard */; };
+		F54DE16527FDCFCB000193C0 /* NasaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE16427FDCFCA000193C0 /* NasaAPI.swift */; };
+		F54DE16A27FDD0C9000193C0 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE16927FDD0C9000193C0 /* Photos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F54DE14F27FDB6F1000193C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F54DE15227FDB6F1000193C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F54DE15427FDB6F1000193C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54DE16427FDCFCA000193C0 /* NasaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPI.swift; sourceTree = "<group>"; };
+		F54DE16927FDD0C9000193C0 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		F54DE14527FDB6EF000193C0 /* NasaAPIExample */ = {
 			isa = PBXGroup;
 			children = (
+				F54DE16627FDD096000193C0 /* Screens */,
+				F54DE16327FDCFB4000193C0 /* Network */,
 				F54DE14627FDB6EF000193C0 /* AppDelegate.swift */,
 				F54DE14827FDB6EF000193C0 /* SceneDelegate.swift */,
 				F54DE14A27FDB6EF000193C0 /* ViewController.swift */,
@@ -65,6 +71,38 @@
 				F54DE15427FDB6F1000193C0 /* Info.plist */,
 			);
 			path = NasaAPIExample;
+			sourceTree = "<group>";
+		};
+		F54DE16327FDCFB4000193C0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F54DE16427FDCFCA000193C0 /* NasaAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F54DE16627FDD096000193C0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F54DE16727FDD0A0000193C0 /* Photos */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F54DE16727FDD0A0000193C0 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				F54DE16827FDD0B3000193C0 /* Model */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		F54DE16827FDD0B3000193C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F54DE16927FDD0C9000193C0 /* Photos.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F54DE14B27FDB6EF000193C0 /* ViewController.swift in Sources */,
+				F54DE16527FDCFCB000193C0 /* NasaAPI.swift in Sources */,
 				F54DE14727FDB6EF000193C0 /* AppDelegate.swift in Sources */,
+				F54DE16A27FDD0C9000193C0 /* Photos.swift in Sources */,
 				F54DE14927FDB6EF000193C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
