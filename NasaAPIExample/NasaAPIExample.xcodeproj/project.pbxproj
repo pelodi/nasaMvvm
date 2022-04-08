@@ -22,7 +22,6 @@
 		F54DE17627FEF0D5000193C0 /* CuriosityPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54DE17527FEF0D5000193C0 /* CuriosityPhotos.storyboard */; };
 		F54DE17B28001A49000193C0 /* CuriosityPhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE17928001A48000193C0 /* CuriosityPhotosTableViewCell.swift */; };
 		F54DE17C28001A49000193C0 /* CuriosityPhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54DE17A28001A48000193C0 /* CuriosityPhotosTableViewCell.xib */; };
-		F54DE17E28001B96000193C0 /* CollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE17D28001B96000193C0 /* CollectionViewCellModel.swift */; };
 		F54DE18228001DB7000193C0 /* CuriosityPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE18128001DB7000193C0 /* CuriosityPhotosViewController.swift */; };
 		F54DE184280022F6000193C0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE183280022F6000193C0 /* UIView.swift */; };
 		F54DE1872800241B000193C0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE1862800241B000193C0 /* BaseViewController.swift */; };
@@ -48,7 +47,6 @@
 		F54DE17527FEF0D5000193C0 /* CuriosityPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CuriosityPhotos.storyboard; sourceTree = "<group>"; };
 		F54DE17928001A48000193C0 /* CuriosityPhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotosTableViewCell.swift; sourceTree = "<group>"; };
 		F54DE17A28001A48000193C0 /* CuriosityPhotosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuriosityPhotosTableViewCell.xib; sourceTree = "<group>"; };
-		F54DE17D28001B96000193C0 /* CollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellModel.swift; sourceTree = "<group>"; };
 		F54DE18128001DB7000193C0 /* CuriosityPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotosViewController.swift; sourceTree = "<group>"; };
 		F54DE183280022F6000193C0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F54DE1862800241B000193C0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 			children = (
 				F54DE17928001A48000193C0 /* CuriosityPhotosTableViewCell.swift */,
 				F54DE17A28001A48000193C0 /* CuriosityPhotosTableViewCell.xib */,
-				F54DE17D28001B96000193C0 /* CollectionViewCellModel.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -327,7 +324,6 @@
 				F54DE1872800241B000193C0 /* BaseViewController.swift in Sources */,
 				F54DE17027FEEDEE000193C0 /* UIViewController.swift in Sources */,
 				F54DE14B27FDB6EF000193C0 /* ViewController.swift in Sources */,
-				F54DE17E28001B96000193C0 /* CollectionViewCellModel.swift in Sources */,
 				F54DE16D27FEE5B4000193C0 /* CuriosityPhotosViewModel.swift in Sources */,
 				F54DE184280022F6000193C0 /* UIView.swift in Sources */,
 				F54DE17327FEEE0E000193C0 /* MessageConstants.swift in Sources */,

@@ -65,7 +65,8 @@ extension CuriosityPhotosViewController: UITableViewDelegate, UITableViewDataSou
         cell.selectionStyle = .none
         return cell
     }
-        
+     
+    //MARK: Method for pagination scrolling
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let position = scrollView.contentOffset.y
         if position > (curiosityPhotos.contentSize.height - 100 - scrollView.frame.size.height) && !viewModel.isPagination {
