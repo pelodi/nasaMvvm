@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CuriosityPhotosTableViewCell: UITableViewCell {
     
@@ -16,6 +17,6 @@ class CuriosityPhotosTableViewCell: UITableViewCell {
     }
     
     public func configure(with model: CollectionViewCellModel) {
-        imageView.kf.setImage(with: URL(string: model.image))
+        curiosityImage.kf.setImage(with: URL(string: model.image))
     }
 }
