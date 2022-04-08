@@ -9,7 +9,7 @@ import Foundation
 
 protocol CuriosityPhotosViewModelDelegate: AnyObject {
     func didFetchPhotos()
-    func showErrorAlert(_ error: Error)
+    func showErrorAlert()
 }
 
 class CuriosityPhotosViewModel {
@@ -19,7 +19,7 @@ class CuriosityPhotosViewModel {
     var photosResponse = [Photos]()
     weak var delegate: CuriosityPhotosViewModelDelegate?
     
-    func fethcRepos() {
+    func fetchPhotos() {
         NasaAPI.shared.fetchCuriosityRoverPhotos(page: page) { [weak self] result in
             guard let self = self else { return }
             switch result {
@@ -28,8 +28,8 @@ class CuriosityPhotosViewModel {
                 self.page += 1
                 self.isPagination = false
                 self.delegate?.didFetchPhotos()
-            case .failure(let error):
-                self.delegate?.showErrorAlert(error)
+            case .failure:
+                self.delegate?.showErrorAlert()
             }
         }
     }
