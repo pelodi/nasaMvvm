@@ -20,6 +20,7 @@ class CuriosityPhotosViewModel {
     weak var delegate: CuriosityPhotosViewModelDelegate?
     
     func fetchPhotos() {
+        isPagination = true
         NasaAPI.shared.fetchCuriosityRoverPhotos(page: page) { [weak self] result in
             guard let self = self else { return }
             switch result {
