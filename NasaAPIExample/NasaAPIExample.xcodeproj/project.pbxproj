@@ -17,7 +17,6 @@
 		F54DE16527FDCFCB000193C0 /* NasaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE16427FDCFCA000193C0 /* NasaAPI.swift */; };
 		F54DE16A27FDD0C9000193C0 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE16927FDD0C9000193C0 /* Photos.swift */; };
 		F54DE16D27FEE5B4000193C0 /* CuriosityPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE16C27FEE5B4000193C0 /* CuriosityPhotosViewModel.swift */; };
-		F54DE17027FEEDEE000193C0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE16F27FEEDEE000193C0 /* UIViewController.swift */; };
 		F54DE17327FEEE0E000193C0 /* MessageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE17227FEEE0E000193C0 /* MessageConstants.swift */; };
 		F54DE17627FEF0D5000193C0 /* CuriosityPhotos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54DE17527FEF0D5000193C0 /* CuriosityPhotos.storyboard */; };
 		F54DE17B28001A49000193C0 /* CuriosityPhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE17928001A48000193C0 /* CuriosityPhotosTableViewCell.swift */; };
@@ -42,7 +41,6 @@
 		F54DE16427FDCFCA000193C0 /* NasaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAPI.swift; sourceTree = "<group>"; };
 		F54DE16927FDD0C9000193C0 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		F54DE16C27FEE5B4000193C0 /* CuriosityPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotosViewModel.swift; sourceTree = "<group>"; };
-		F54DE16F27FEEDEE000193C0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F54DE17227FEEE0E000193C0 /* MessageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageConstants.swift; sourceTree = "<group>"; };
 		F54DE17527FEF0D5000193C0 /* CuriosityPhotos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CuriosityPhotos.storyboard; sourceTree = "<group>"; };
 		F54DE17928001A48000193C0 /* CuriosityPhotosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotosTableViewCell.swift; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 		F54DE16E27FEEDD0000193C0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F54DE16F27FEEDEE000193C0 /* UIViewController.swift */,
 				F54DE183280022F6000193C0 /* UIView.swift */,
 			);
 			path = Extensions;
@@ -322,7 +319,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F54DE1872800241B000193C0 /* BaseViewController.swift in Sources */,
-				F54DE17027FEEDEE000193C0 /* UIViewController.swift in Sources */,
 				F54DE14B27FDB6EF000193C0 /* ViewController.swift in Sources */,
 				F54DE16D27FEE5B4000193C0 /* CuriosityPhotosViewModel.swift in Sources */,
 				F54DE184280022F6000193C0 /* UIView.swift in Sources */,

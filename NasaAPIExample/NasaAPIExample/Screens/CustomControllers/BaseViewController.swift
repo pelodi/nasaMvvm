@@ -9,12 +9,22 @@ import UIKit
 
 class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     
+    fileprivate var activityView: UIView?
     var vSpinner : UIView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // for swipe back
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+    }
+    
+    func showError() {
+        let alertController = UIAlertController(title: MessageConstants.ApiResponseTitle.Warning, message: MessageConstants.ApiErrorMessages.NoElements, preferredStyle:UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "TAMAM", style: .default, handler: { (_) in
+            alertController.dismiss(animated: true, completion: nil)
+            self.navigationController?.popViewController(animated: true)
+        }))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     func showSpinner(onView : UIView) {
