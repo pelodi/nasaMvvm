@@ -14,9 +14,6 @@ enum RequestError: Error {
 
 class NasaAPI {
     
-    //MARK: Initiliaze
-    private init() {}
-    
     //MARK: Proporties
     static let shared = NasaAPI()
     
