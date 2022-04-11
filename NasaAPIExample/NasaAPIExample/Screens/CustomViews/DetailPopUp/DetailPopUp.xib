@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailPopUp" customModule="NasaAPIExample" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraValue" destination="772-61-GXu" id="RlH-4O-2Qg"/>
+                <outlet property="earthDate" destination="kIp-QM-760" id="sRK-Mz-RXd"/>
+                <outlet property="holderView" destination="xNH-E1-MRz" id="xRW-xI-iGs"/>
+                <outlet property="imageView" destination="RJx-Hz-VZW" id="cTQ-sn-Peu"/>
+                <outlet property="landingDate" destination="Win-ZY-boi" id="6gS-hw-hyf"/>
+                <outlet property="launchDate" destination="pTh-s7-QfG" id="9z1-Qg-qJi"/>
+                <outlet property="name" destination="5eU-zi-hkn" id="8r8-NU-2ZT"/>
+                <outlet property="parentView" destination="0Br-6U-KOV" id="7Uf-8f-BQ3"/>
+                <outlet property="status" destination="XHh-d3-109" id="P0M-F7-bDg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0Br-6U-KOV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNH-E1-MRz" userLabel="Holder View">
+                    <rect key="frame" x="50" y="248" width="314" height="400"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RJx-Hz-VZW">
+                            <rect key="frame" x="107" y="8" width="100" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Ccl-2d-fnK"/>
+                                <constraint firstAttribute="height" constant="120" id="erP-1X-qCq"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth date:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnD-Mg-eCM">
+                            <rect key="frame" x="16" y="144" width="90" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25-10-2021" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIp-QM-760" userLabel="Earth date value label">
+                            <rect key="frame" x="116" y="142" width="182" height="24.5"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3d-so-ByK">
+                            <rect key="frame" x="16" y="182.5" width="69" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="772-61-GXu" userLabel="Camera value label">
+                            <rect key="frame" x="126" y="180.5" width="62" height="24.5"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlY-p9-pf7">
+                            <rect key="frame" x="16" y="221" width="53" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eU-zi-hkn" userLabel="Name value label">
+                            <rect key="frame" x="133.5" y="219" width="47" height="24.5"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmg-Vp-Tah">
+                            <rect key="frame" x="16" y="257.5" width="59" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHh-d3-109" userLabel="Status value label">
+                            <rect key="frame" x="130.5" y="255.5" width="53.5" height="24.5"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch date:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6db-3f-Ywh">
+                            <rect key="frame" x="16" y="294" width="106" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTh-s7-QfG" userLabel="Launch value label">
+                            <rect key="frame" x="151" y="292" width="92.5" height="24.5"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landing date:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dS-bg-H5u">
+                            <rect key="frame" x="16" y="330.5" width="111.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landing date:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Win-ZY-boi" userLabel="Landing date value">
+                            <rect key="frame" x="151" y="328.5" width="102" height="24.5"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOh-fV-a3o">
+                            <rect key="frame" x="278" y="8" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="CVB-dU-TNf"/>
+                                <constraint firstAttribute="height" constant="24" id="hcm-XO-l0r"/>
+                            </constraints>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="close:" destination="-1" eventType="touchUpInside" id="rwX-A5-Pw5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="pTh-s7-QfG" firstAttribute="centerX" secondItem="xNH-E1-MRz" secondAttribute="centerX" constant="40" id="20o-4Z-GgV"/>
+                        <constraint firstItem="Win-ZY-boi" firstAttribute="centerY" secondItem="6dS-bg-H5u" secondAttribute="centerY" id="60c-NZ-BvA"/>
+                        <constraint firstItem="qlY-p9-pf7" firstAttribute="top" secondItem="772-61-GXu" secondAttribute="bottom" constant="16" id="6P4-KQ-KOD"/>
+                        <constraint firstItem="6dS-bg-H5u" firstAttribute="leading" secondItem="FnD-Mg-eCM" secondAttribute="leading" id="6ca-T0-J8n"/>
+                        <constraint firstItem="6db-3f-Ywh" firstAttribute="leading" secondItem="FnD-Mg-eCM" secondAttribute="leading" id="BhE-gl-kky"/>
+                        <constraint firstItem="k3d-so-ByK" firstAttribute="top" secondItem="kIp-QM-760" secondAttribute="bottom" constant="16" id="CGW-wj-b6d"/>
+                        <constraint firstItem="6db-3f-Ywh" firstAttribute="top" secondItem="qmg-Vp-Tah" secondAttribute="bottom" constant="16" id="E8W-Vd-8qQ"/>
+                        <constraint firstItem="RJx-Hz-VZW" firstAttribute="centerX" secondItem="xNH-E1-MRz" secondAttribute="centerX" id="GqM-TS-If9"/>
+                        <constraint firstItem="5eU-zi-hkn" firstAttribute="centerX" secondItem="xNH-E1-MRz" secondAttribute="centerX" id="M0h-SA-fmh"/>
+                        <constraint firstItem="5eU-zi-hkn" firstAttribute="centerY" secondItem="qlY-p9-pf7" secondAttribute="centerY" id="MpG-m1-MUA"/>
+                        <constraint firstItem="iOh-fV-a3o" firstAttribute="top" secondItem="xNH-E1-MRz" secondAttribute="top" constant="8" id="OWF-Qo-yTq"/>
+                        <constraint firstItem="RJx-Hz-VZW" firstAttribute="top" secondItem="xNH-E1-MRz" secondAttribute="top" constant="8" id="QNM-ic-BYV"/>
+                        <constraint firstItem="pTh-s7-QfG" firstAttribute="centerY" secondItem="6db-3f-Ywh" secondAttribute="centerY" id="TGO-vy-QDZ"/>
+                        <constraint firstItem="Win-ZY-boi" firstAttribute="centerX" secondItem="xNH-E1-MRz" secondAttribute="centerX" constant="45" id="WUU-1g-2dn"/>
+                        <constraint firstItem="6dS-bg-H5u" firstAttribute="top" secondItem="6db-3f-Ywh" secondAttribute="bottom" constant="16" id="Z2Y-c0-gcF"/>
+                        <constraint firstAttribute="height" constant="400" id="aWM-ie-ybJ"/>
+                        <constraint firstAttribute="trailing" secondItem="kIp-QM-760" secondAttribute="trailing" constant="16" id="c8Y-TW-xjN"/>
+                        <constraint firstItem="qmg-Vp-Tah" firstAttribute="top" secondItem="qlY-p9-pf7" secondAttribute="bottom" constant="16" id="eSj-Jg-c1H"/>
+                        <constraint firstItem="qmg-Vp-Tah" firstAttribute="leading" secondItem="FnD-Mg-eCM" secondAttribute="leading" id="fbi-QW-wca"/>
+                        <constraint firstItem="772-61-GXu" firstAttribute="centerX" secondItem="xNH-E1-MRz" secondAttribute="centerX" id="hTD-sr-aA4"/>
+                        <constraint firstItem="772-61-GXu" firstAttribute="centerY" secondItem="k3d-so-ByK" secondAttribute="centerY" id="jxM-Sy-EHi"/>
+                        <constraint firstItem="FnD-Mg-eCM" firstAttribute="leading" secondItem="xNH-E1-MRz" secondAttribute="leading" constant="16" id="mD9-eq-71V"/>
+                        <constraint firstItem="k3d-so-ByK" firstAttribute="leading" secondItem="FnD-Mg-eCM" secondAttribute="leading" id="oCt-uF-LbU"/>
+                        <constraint firstItem="kIp-QM-760" firstAttribute="centerX" secondItem="xNH-E1-MRz" secondAttribute="centerX" constant="50" id="r3K-Sw-CGb"/>
+                        <constraint firstItem="FnD-Mg-eCM" firstAttribute="top" secondItem="RJx-Hz-VZW" secondAttribute="bottom" constant="16" id="ts3-EA-3zl"/>
+                        <constraint firstItem="XHh-d3-109" firstAttribute="centerX" secondItem="xNH-E1-MRz" secondAttribute="centerX" id="uV3-kf-WU6"/>
+                        <constraint firstItem="kIp-QM-760" firstAttribute="centerY" secondItem="FnD-Mg-eCM" secondAttribute="centerY" id="upY-uG-iMd"/>
+                        <constraint firstAttribute="trailing" secondItem="iOh-fV-a3o" secondAttribute="trailing" constant="12" id="wdA-rx-BTt"/>
+                        <constraint firstItem="qlY-p9-pf7" firstAttribute="leading" secondItem="FnD-Mg-eCM" secondAttribute="leading" id="yVn-NE-uIq"/>
+                        <constraint firstItem="XHh-d3-109" firstAttribute="centerY" secondItem="qmg-Vp-Tah" secondAttribute="centerY" id="zct-ww-gl6"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="25J-TO-sgS"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.7509311903" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="xNH-E1-MRz" firstAttribute="leading" secondItem="25J-TO-sgS" secondAttribute="leading" constant="50" id="InW-ih-QyH"/>
+                <constraint firstItem="xNH-E1-MRz" firstAttribute="centerX" secondItem="25J-TO-sgS" secondAttribute="centerX" id="S7E-8g-CJB"/>
+                <constraint firstItem="xNH-E1-MRz" firstAttribute="centerY" secondItem="0Br-6U-KOV" secondAttribute="centerY" id="VI0-xa-fWb"/>
+                <constraint firstItem="25J-TO-sgS" firstAttribute="trailing" secondItem="xNH-E1-MRz" secondAttribute="trailing" constant="50" id="wk8-2f-PUr"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
