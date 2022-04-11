@@ -2,7 +2,7 @@
 //  CuriosityPhotosViewModel.swift
 //  NasaAPIExample
 //
-//  Created by Tuncel, Pelin, Vodafone on 4/7/22.
+//  Created by Tuncel, Pelin on 4/7/22.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  CuriosityPhotosViewController.swift
 //  NasaAPIExample
 //
-//  Created by Tuncel, Pelin, Vodafone on 4/8/22.
+//  Created by Tuncel, Pelin on 4/8/22.
 //
 
 import UIKit
@@ -20,36 +20,36 @@ class CuriosityPhotosViewController: BaseViewController {
     }
     
     private func setupPage() {
-        title = "Curiosity Camera"
-        viewModel.delegate = self
-        curiosityPhotos.dataSource = self
-        curiosityPhotos.delegate = self
-        curiosityPhotos.register(UINib(nibName: CuriosityPhotosTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: CuriosityPhotosTableViewCell.identifier)
+        title = "Photos from NASA"
+        self.viewModel.delegate = self
+        self.curiosityPhotos.dataSource = self
+        self.curiosityPhotos.delegate = self
+        self.curiosityPhotos.register(UINib(nibName: CuriosityPhotosTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: CuriosityPhotosTableViewCell.identifier)
     }
     
     private func initViewModel() {
-        showSpinner(onView: self.view)
-        viewModel.fetchPhotos()
+        self.showSpinner(onView: self.view)
+        self.viewModel.fetchPhotos()
     }
 }
 
 // MARK: - Extensions
 extension CuriosityPhotosViewController: CuriosityPhotosViewModelDelegate {
     func didFetchPhotos() {
-        removeSpinner()
+        self.removeSpinner()
         DispatchQueue.main.async {
             self.curiosityPhotos.reloadData()
         }
     }
     
     func showErrorAlert() {
-        showError()
+        self.showError()
     }
 }
 
 extension CuriosityPhotosViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.photosResponse.count
+        return self.viewModel.photosResponse.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -60,17 +60,22 @@ extension CuriosityPhotosViewController: UITableViewDelegate, UITableViewDataSou
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CuriosityPhotosTableViewCell.identifier, for: indexPath) as? CuriosityPhotosTableViewCell else {
             return UITableViewCell()
         }
-        cell.configure(with: viewModel.photosResponse[indexPath.row])
+        cell.configure(with: self.viewModel.photosResponse[indexPath.row])
         cell.addShadow()
         cell.selectionStyle = .none
         return cell
+    }
+    
+    //MARK: Select cell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DetailPopUp.instance.showAlert(earthDateText: self.viewModel.photosResponse[indexPath.row].earth_date ?? "", cameraText: self.viewModel.photosResponse[indexPath.row].camera?.name ?? "", nameText: self.viewModel.photosResponse[indexPath.row].rover?.name ?? "", statusText: self.viewModel.photosResponse[indexPath.row].rover?.status ?? "", launchDateText: self.viewModel.photosResponse[indexPath.row].rover?.launch_date ?? "", landingDateText: self.viewModel.photosResponse[indexPath.row].rover?.landing_date ?? "", image: self.viewModel.photosResponse[indexPath.row].img_src ?? "")
     }
      
     //MARK: Method for pagination scrolling
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let position = scrollView.contentOffset.y
-        if position > (curiosityPhotos.contentSize.height - 100 - scrollView.frame.size.height) && !viewModel.isPagination {
-            viewModel.fetchPhotos()
+        if position > (self.curiosityPhotos.contentSize.height - 100 - scrollView.frame.size.height) && !self.viewModel.isPagination {
+            self.viewModel.fetchPhotos()
         }
     }
 }

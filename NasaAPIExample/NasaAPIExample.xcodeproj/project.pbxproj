@@ -10,7 +10,6 @@
 		42000B01C2F01E4022659E7F /* Pods_NasaAPIExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB0BD579C4759881737B99A /* Pods_NasaAPIExample.framework */; };
 		F54DE14727FDB6EF000193C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE14627FDB6EF000193C0 /* AppDelegate.swift */; };
 		F54DE14927FDB6EF000193C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE14827FDB6EF000193C0 /* SceneDelegate.swift */; };
-		F54DE14B27FDB6EF000193C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE14A27FDB6EF000193C0 /* ViewController.swift */; };
 		F54DE14E27FDB6EF000193C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54DE14C27FDB6EF000193C0 /* Main.storyboard */; };
 		F54DE15027FDB6F1000193C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54DE14F27FDB6F1000193C0 /* Assets.xcassets */; };
 		F54DE15327FDB6F1000193C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54DE15127FDB6F1000193C0 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,9 @@
 		F54DE18228001DB7000193C0 /* CuriosityPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE18128001DB7000193C0 /* CuriosityPhotosViewController.swift */; };
 		F54DE184280022F6000193C0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE183280022F6000193C0 /* UIView.swift */; };
 		F54DE1872800241B000193C0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54DE1862800241B000193C0 /* BaseViewController.swift */; };
+		F55631392804497D004896F4 /* DetailPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55631382804497D004896F4 /* DetailPopUp.xib */; };
+		F556313B280449C3004896F4 /* DetailPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556313A280449C2004896F4 /* DetailPopUp.swift */; };
+		F556313D28044C61004896F4 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556313C28044C61004896F4 /* UIWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +35,6 @@
 		F54DE14327FDB6EF000193C0 /* NasaAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54DE14627FDB6EF000193C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F54DE14827FDB6EF000193C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F54DE14A27FDB6EF000193C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F54DE14D27FDB6EF000193C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F54DE14F27FDB6F1000193C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F54DE15227FDB6F1000193C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		F54DE18128001DB7000193C0 /* CuriosityPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuriosityPhotosViewController.swift; sourceTree = "<group>"; };
 		F54DE183280022F6000193C0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F54DE1862800241B000193C0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F55631382804497D004896F4 /* DetailPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPopUp.xib; sourceTree = "<group>"; };
+		F556313A280449C2004896F4 /* DetailPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPopUp.swift; sourceTree = "<group>"; };
+		F556313C28044C61004896F4 /* UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +110,6 @@
 				F54DE16327FDCFB4000193C0 /* Network */,
 				F54DE14627FDB6EF000193C0 /* AppDelegate.swift */,
 				F54DE14827FDB6EF000193C0 /* SceneDelegate.swift */,
-				F54DE14A27FDB6EF000193C0 /* ViewController.swift */,
 				F54DE14C27FDB6EF000193C0 /* Main.storyboard */,
 				F54DE14F27FDB6F1000193C0 /* Assets.xcassets */,
 				F54DE15127FDB6F1000193C0 /* LaunchScreen.storyboard */,
@@ -126,6 +129,7 @@
 		F54DE16627FDD096000193C0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F556313628044943004896F4 /* CustomViews */,
 				F54DE1852800240E000193C0 /* CustomControllers */,
 				F54DE16727FDD0A0000193C0 /* CuriosityPhotos */,
 			);
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				F54DE183280022F6000193C0 /* UIView.swift */,
+				F556313C28044C61004896F4 /* UIWindow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +204,23 @@
 				F54DE1862800241B000193C0 /* BaseViewController.swift */,
 			);
 			path = CustomControllers;
+			sourceTree = "<group>";
+		};
+		F556313628044943004896F4 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F55631372804494A004896F4 /* DetailPopUp */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F55631372804494A004896F4 /* DetailPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				F55631382804497D004896F4 /* DetailPopUp.xib */,
+				F556313A280449C2004896F4 /* DetailPopUp.swift */,
+			);
+			path = DetailPopUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +288,7 @@
 				F54DE17C28001A49000193C0 /* CuriosityPhotosTableViewCell.xib in Resources */,
 				F54DE15027FDB6F1000193C0 /* Assets.xcassets in Resources */,
 				F54DE14E27FDB6EF000193C0 /* Main.storyboard in Resources */,
+				F55631392804497D004896F4 /* DetailPopUp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,9 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F54DE1872800241B000193C0 /* BaseViewController.swift in Sources */,
-				F54DE14B27FDB6EF000193C0 /* ViewController.swift in Sources */,
 				F54DE16D27FEE5B4000193C0 /* CuriosityPhotosViewModel.swift in Sources */,
 				F54DE184280022F6000193C0 /* UIView.swift in Sources */,
+				F556313D28044C61004896F4 /* UIWindow.swift in Sources */,
 				F54DE17327FEEE0E000193C0 /* MessageConstants.swift in Sources */,
 				F54DE16527FDCFCB000193C0 /* NasaAPI.swift in Sources */,
 				F54DE14727FDB6EF000193C0 /* AppDelegate.swift in Sources */,
@@ -329,6 +352,7 @@
 				F54DE16A27FDD0C9000193C0 /* Photos.swift in Sources */,
 				F54DE14927FDB6EF000193C0 /* SceneDelegate.swift in Sources */,
 				F54DE17B28001A49000193C0 /* CuriosityPhotosTableViewCell.swift in Sources */,
+				F556313B280449C3004896F4 /* DetailPopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -458,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

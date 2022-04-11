@@ -2,7 +2,7 @@
 //  BaseViewController.swift
 //  NasaAPIExample
 //
-//  Created by Tuncel, Pelin, Vodafone on 4/8/22.
+//  Created by Tuncel, Pelin on 4/8/22.
 //
 
 import UIKit
